@@ -9,6 +9,8 @@ namespace API__Clean_Template
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            // Automatically loads appsettings.json and appsettings.{Environment}.json
+            var environment = builder.Environment.EnvironmentName;
             // Add services to the container.
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
@@ -30,7 +32,9 @@ namespace API__Clean_Template
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
-            if (app.Environment.IsDevelopment())
+            if (app.Environment.IsDevelopment() ||
+                app.Environment.IsStaging() ||
+                app.Environment.IsProduction())
             {
                 app.UseSwagger();
                 app.UseSwaggerUI();

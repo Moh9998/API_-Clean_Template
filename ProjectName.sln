@@ -5,11 +5,11 @@ VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API_ Clean_Template", "API_ Clean_Template\API_ Clean_Template.csproj", "{D6928CE0-64EA-4C51-9363-3AA7DDBA92A6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API_ Clean_Template.Domain", "API_ Clean_Template.Domain\API_ Clean_Template.Domain.csproj", "{B1373A2A-647F-4440-BD5D-836A1B2FCE76}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "API_ Clean_Template.Domain\Domain.csproj", "{B1373A2A-647F-4440-BD5D-836A1B2FCE76}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API_ Clean_Template.InfraStructure", "API_ Clean_Template.InfraStructure\API_ Clean_Template.InfraStructure.csproj", "{FE70815B-CE55-4F11-A978-D74557FDA3BE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "API_ Clean_Template.InfraStructure\Infrastructure.csproj", "{FE70815B-CE55-4F11-A978-D74557FDA3BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API_ Clean_Template.Application", "API_ Clean_Template.Application\API_ Clean_Template.Application.csproj", "{5BB573EA-FFD3-4DB6-AF4B-23BF3482D97E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "API_ Clean_Template.Application\Application.csproj", "{5BB573EA-FFD3-4DB6-AF4B-23BF3482D97E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
