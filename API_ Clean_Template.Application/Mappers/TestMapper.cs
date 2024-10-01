@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace API__Clean_Template.Application.Mappers
+﻿namespace API__Clean_Template.Application.Mappers
 {
-    internal class TestMApper
+    public class TestMApper
     {
     }
 }
