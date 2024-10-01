@@ -12,43 +12,42 @@ namespace API__Clean_Template
             // Automatically loads appsettings.json and appsettings.{Environment}.json
             var environment = builder.Environment.EnvironmentName;
             // Add services to the container.
-            builder.Services.AddControllers();
-            builder.Services.AddEndpointsApiExplorer();
-            builder.Services.AddSwaggerGen();
+            builder.Services.AddControllers( );
+            builder.Services.AddEndpointsApiExplorer( );
+            builder.Services.AddSwaggerGen( );
+            //builder.Services.AddScoped<FluentValidation.IValidator<TestMOdel>, ModelValidations>();
 
             // Configure EF Core to use PostgreSQL with a connection string
             builder.Services.AddDbContext<DataContext>(options =>
                 options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
             // Configure CORS policy
-            builder.Services.AddCors(options =>
-            {
+            builder.Services.AddCors(options => {
                 options.AddPolicy("AllowAll",
-                    builder => builder.AllowAnyOrigin()
-                                      .AllowAnyMethod()
-                                      .AllowAnyHeader());
+                    builder => builder.AllowAnyOrigin( )
+                                      .AllowAnyMethod( )
+                                      .AllowAnyHeader( ));
             });
 
-            var app = builder.Build();
+            var app = builder.Build( );
 
             // Configure the HTTP request pipeline.
-            if (app.Environment.IsDevelopment() ||
-                app.Environment.IsStaging() ||
-                app.Environment.IsProduction())
+            if (app.Environment.IsDevelopment( ) ||
+                app.Environment.IsStaging( ))
             {
-                app.UseSwagger();
-                app.UseSwaggerUI();
+                app.UseSwagger( );
+                app.UseSwaggerUI( );
             }
 
-            app.UseHttpsRedirection();
+            app.UseHttpsRedirection( );
 
-            app.UseAuthorization();
+            app.UseAuthorization( );
 
             app.UseCors("AllowAll");
 
-            app.MapControllers();
+            app.MapControllers( );
 
-            app.Run();
+            app.Run( );
         }
     }
 }

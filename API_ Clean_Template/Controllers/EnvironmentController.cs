@@ -26,5 +26,7 @@ namespace API__Clean_Template.Controllers
 
             return Ok(new { Environment = environmentName, ConnectionString = connectionString });
         }
+
+
     }
 }

@@ -1,10 +1,19 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>API__Clean_Template</RootNamespace>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <RepositoryUrl>https://github.com/Moh9998/API_-Clean_Template</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackAsTool>False</PackAsTool>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <Optimize>True</Optimize>
   </PropertyGroup>
 
   <ItemGroup>
@@ -23,7 +32,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\API_ Clean_Template.InfraStructure\Infrastructure.csproj" />
+    <ProjectReference Include="..\API_ Clean_Template.Application\MOW.Selective.Application.csproj" />
+    <ProjectReference Include="..\API_ Clean_Template.InfraStructure\MOW.Selective.Infrastructure.csproj" />
   </ItemGroup>
 
   <ItemGroup>

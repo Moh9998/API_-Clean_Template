@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API_ Clean_Template", "API_ Clean_Template\API_ Clean_Template.csproj", "{D6928CE0-64EA-4C51-9363-3AA7DDBA92A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MOW.Selective", "API_ Clean_Template\MOW.Selective.csproj", "{D6928CE0-64EA-4C51-9363-3AA7DDBA92A6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "API_ Clean_Template.Domain\Domain.csproj", "{B1373A2A-647F-4440-BD5D-836A1B2FCE76}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MOW.Selective.Core", "API_ Clean_Template.Domain\MOW.Selective.Core.csproj", "{B1373A2A-647F-4440-BD5D-836A1B2FCE76}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "API_ Clean_Template.InfraStructure\Infrastructure.csproj", "{FE70815B-CE55-4F11-A978-D74557FDA3BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MOW.Selective.Infrastructure", "API_ Clean_Template.InfraStructure\MOW.Selective.Infrastructure.csproj", "{FE70815B-CE55-4F11-A978-D74557FDA3BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "API_ Clean_Template.Application\Application.csproj", "{5BB573EA-FFD3-4DB6-AF4B-23BF3482D97E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MOW.Selective.Application", "API_ Clean_Template.Application\MOW.Selective.Application.csproj", "{5BB573EA-FFD3-4DB6-AF4B-23BF3482D97E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D3D36181-A958-43E9-BF7F-1852A5B30853}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
