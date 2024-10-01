@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MOW.Selective.Infrastructur
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MOW.Selective.Application", "API_ Clean_Template.Application\MOW.Selective.Application.csproj", "{5BB573EA-FFD3-4DB6-AF4B-23BF3482D97E}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D3D36181-A958-43E9-BF7F-1852A5B30853}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{593BFB4A-E36E-4743-867B-D776F1D50306}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,6 +38,12 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D6928CE0-64EA-4C51-9363-3AA7DDBA92A6} = {593BFB4A-E36E-4743-867B-D776F1D50306}
+		{B1373A2A-647F-4440-BD5D-836A1B2FCE76} = {593BFB4A-E36E-4743-867B-D776F1D50306}
+		{FE70815B-CE55-4F11-A978-D74557FDA3BE} = {593BFB4A-E36E-4743-867B-D776F1D50306}
+		{5BB573EA-FFD3-4DB6-AF4B-23BF3482D97E} = {593BFB4A-E36E-4743-867B-D776F1D50306}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1C39921A-940F-43FC-AC8D-21B162B8B0FA}

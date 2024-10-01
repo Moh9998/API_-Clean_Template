@@ -11,6 +11,7 @@
     <Folder Include="Exceptions\" />
     <Folder Include="Logging\" />
     <Folder Include="External API\" />
+    <Folder Include="Identity\" />
     <Folder Include="Repositories\" />
   </ItemGroup>
 
