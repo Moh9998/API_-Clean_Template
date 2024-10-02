@@ -1,5 +1,4 @@
-using API__Clean_Template.InfraStructure.Data;
-using Microsoft.EntityFrameworkCore;
+using API__Clean_Template.InfraStructure;
 
 namespace API__Clean_Template
 {
@@ -17,9 +16,7 @@ namespace API__Clean_Template
             builder.Services.AddSwaggerGen( );
             //builder.Services.AddScoped<FluentValidation.IValidator<TestMOdel>, ModelValidations>();
 
-            // Configure EF Core to use PostgreSQL with a connection string
-            builder.Services.AddDbContext<DataContext>(options =>
-                options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+            builder.Services.AddInfrastructure(builder.Configuration);
 
             // Configure CORS policy
             builder.Services.AddCors(options => {
