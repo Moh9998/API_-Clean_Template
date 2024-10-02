@@ -1,4 +1,4 @@
-﻿using API__Clean_Template.InfraStructure.Data;
+﻿using API__Clean_Template.InfraStructure.Database.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;

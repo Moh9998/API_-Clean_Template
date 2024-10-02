@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Microsoft.Extensions.DependencyInjection;
 
 namespace API__Clean_Template.Application
 {
-    internal class Depenecy
+    public static class Depenecy
     {
+        public static IServiceCollection AddApplication(this IServiceCollection services)
+        {
+
+            return services;
+        }
     }
 }
