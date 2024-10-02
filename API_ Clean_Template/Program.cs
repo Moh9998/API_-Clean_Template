@@ -1,3 +1,4 @@
+using API__Clean_Template.Application;
 using API__Clean_Template.InfraStructure;
 
 namespace API__Clean_Template
@@ -14,9 +15,9 @@ namespace API__Clean_Template
             builder.Services.AddControllers( );
             builder.Services.AddEndpointsApiExplorer( );
             builder.Services.AddSwaggerGen( );
-            //builder.Services.AddScoped<FluentValidation.IValidator<TestMOdel>, ModelValidations>();
 
             builder.Services.AddInfrastructure(builder.Configuration);
+            builder.Services.AddApplication( );
 
             // Configure CORS policy
             builder.Services.AddCors(options => {
